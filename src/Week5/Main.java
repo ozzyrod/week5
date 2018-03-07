@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main( String[] args ) {
 
         /*
          * Write a program that takes a test score from 1-10
@@ -106,7 +106,8 @@ public class Main {
              */
         }
 
-	    /* Write a program that prints numbers from 1 to 10 but stops
+	    /*
+	     * Write a program that prints numbers from 1 to 10 but stops
 	     * at a number given by the user
 	     */
 
@@ -121,5 +122,47 @@ public class Main {
 
 	    	System.out.println( counter );
 	    }
+
+	    /*
+	     * Write a program that prints numbers from 1 to 10 but skips
+	     * a number given by the user
+	     */
+
+	    System.out.print( "What number to skip: " );
+	    int skipNumber = input.nextInt();
+
+	    for ( int counter = 1; counter <= 10; counter++ ) {
+
+		    if ( counter == skipNumber ) {
+			    continue;
+		    }
+
+		    System.out.println( counter );
+	    }
+
+	    /*
+	     * Exercise 4: Calculating Sales exercise in the book (5.17 in 9th edition)
+	     *
+	     * An online retailer sells five products whose retail
+	     * prices are as follows:
+	     *
+	     * Product 1: $2.98
+	     * Product 2: $4.50
+	     * Product 3: $9.98
+	     * Product 4: $4.49
+	     * Product 5: $6.87
+	     *
+	     * Write a program that reads a series of pairs of numbers as follows:
+	     *
+	     * Product number
+	     * Quantity sold
+	     *
+	     * Your program should use a switch statement to determine the retail
+	     * price for each product. It should calculate and display the total
+	     * retail value of all products sold.
+	     *
+	     * Use a loop to determine when the program should stop looping and
+	     * display the final results.
+	     */
     }
 }
